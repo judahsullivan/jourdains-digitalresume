@@ -40,10 +40,12 @@ const features: IFeature[] = [
 const Abouts = () => {
   return (
     <Container id='about' bg={'#c9e4ca'} mt={2} borderRadius={'lg'} maxW="6xl" p={{ base: 5, md: 10 }}>
-       <Header underlineColor={''} textAlign={'center'} mt={0} cursor="pointer" width="max-content">
+       <Header underlineColor={''} textAlign={'center'} mt={0} cursor="pointer" maxW="100%">
                 Here is a Little Bit About Me!
         </Header> 
-        <Paragraph>Hello, my name is Jourdain Thomas, an Experienced Customer Service and Consumer Representative. I started my customer/consumer services journey at 16. From there I went on to work in multiple call centers and CSR positions . In my spare time I enjoy creating from art to a project series of childrens books, spending time with my family when able, binging the latest Netflix series, and going on nature walks when the weather permits. </Paragraph>
+        <Box maxW={'100%'} letterSpacing={'tight'}>
+        <Paragraph>I started my journey Customer/Consumer services journey at 16. From there I went on to work in multiple call centers and CSR positions . In my spare time I enjoy creating from art to a project series of childrens books, spending time with my family when able, binging the latest Netflix series, and going on nature walks when the weather permits. </Paragraph>
+        </Box>
       <SimpleGrid columns={{ base: 1, md: 2 }} placeItems="center" spacing={16} mt={12} mb={4}>
         {features.map((feature, index) => (
           <Box key={index} textAlign="center">

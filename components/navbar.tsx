@@ -41,8 +41,9 @@ export default function Navbar() {
 
          </HStack>
         </HStack>
-
-       <IconButton
+<Flex mr={2}>
+  <IconButton
+         mr={2} 
           size="md"
           icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
           aria-label="Open Menu"
@@ -50,11 +51,12 @@ export default function Navbar() {
           onClick={isOpen ? onClose : onOpen}
         />
         <ResumeButton />
-      </Flex>
+    </Flex>  
+     </Flex>
 
       {/* Mobile Screen Links */}
       {isOpen ? (
-        <Box pb={4} display={{ base: 'inherit', md: 'none' }}>
+        <Box pb={4} display={{ base: 'inherit', md: 'none' }} >
           <Stack as="nav" spacing={2}>
             {navLinks.map((link, index) => (
               <NavLink key={index} {...link} onClose={onClose} />
