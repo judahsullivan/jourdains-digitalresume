@@ -43,7 +43,7 @@ const Abouts = () => {
        <Header underlineColor={''} textAlign={'center'} mt={0} cursor="pointer" width="max-content">
                 Here is a Little Bit About Me!
         </Header> 
-        <Paragraph>Hello, my name is Jourdain Thomas, an Expierenced Customer Service and Consumer Representative. I started my customer/consumer services journey at 16. From there I went on to work in multiple call centers and CSR positions . In my spare time I enjoy creating from art to a project series of childrens books, spending time with my family when able, binging the latest Netflix series, and going on nature walks when the weather permits. </Paragraph>
+        <Paragraph>Hello, my name is Jourdain Thomas, an Experienced Customer Service and Consumer Representative. I started my customer/consumer services journey at 16. From there I went on to work in multiple call centers and CSR positions . In my spare time I enjoy creating from art to a project series of childrens books, spending time with my family when able, binging the latest Netflix series, and going on nature walks when the weather permits. </Paragraph>
       <SimpleGrid columns={{ base: 1, md: 2 }} placeItems="center" spacing={16} mt={12} mb={4}>
         {features.map((feature, index) => (
           <Box key={index} textAlign="center">

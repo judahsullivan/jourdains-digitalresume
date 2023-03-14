@@ -18,6 +18,7 @@ const Meta = ({ title, author, keywords, description }: Props): JSX.Element => {
       <meta name="author" content={author} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+       <link rel="shortcut icon" href="/assets/images/hummingbird.png" type='images/bird' />
       <meta property="og:type" content="website" />
       <title>{title.includes('Jourdain') ? title : title.concat(' | Jourdain Thomas  ')}</title>
     </Head>
